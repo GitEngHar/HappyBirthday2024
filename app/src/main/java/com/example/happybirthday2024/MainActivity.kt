@@ -167,6 +167,20 @@ fun MainContent(){
         painterResource(R.drawable.fav17),
         painterResource(R.drawable.fav19),
         painterResource(R.drawable.fav20),
+        painterResource(R.drawable.fav21),
+        painterResource(R.drawable.fav22),
+        painterResource(R.drawable.fav23),
+        painterResource(R.drawable.fav24),
+        painterResource(R.drawable.fav25),
+        painterResource(R.drawable.fav26),
+        painterResource(R.drawable.fav27),
+        painterResource(R.drawable.fav28),
+        painterResource(R.drawable.fav29),
+        painterResource(R.drawable.fav30),
+        painterResource(R.drawable.fav31),
+        painterResource(R.drawable.fav32),
+        painterResource(R.drawable.fav33),
+        painterResource(R.drawable.fav34),
     )
     var favImageNumber by remember { mutableStateOf((0..favoriteImages.size-1).random()) }
     /*
