@@ -33,9 +33,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import com.example.happybirthday2024.AudioPlayerWithLoop
 import com.example.happybirthday2024.Footer
@@ -120,11 +118,11 @@ fun ModifierShioriSecondDayImage(){
 
 @Composable
 fun MainShioriSecondDayMainView(){
-    val bus = painterResource(R.drawable.gotoosaka)
+    val shinkansen = painterResource(R.drawable.shinkansen)
     val spaWorld = painterResource(R.drawable.spaworld)
     val park = painterResource(R.drawable.park)
-    val hotel = painterResource(R.drawable.hotelroom)
-    val tokitoki = painterResource(R.drawable.escape)
+    val hotel = painterResource(R.drawable.hotelrooms)
+    val hurugi = painterResource(R.drawable.hurugi)
     val imageModifier = Modifier.size(150.dp)
     val cloud = painterResource(R.drawable.cloud_squeare2)
     val cloudMediumImageModifier = Modifier.size(150.dp)
@@ -137,28 +135,28 @@ fun MainShioriSecondDayMainView(){
     val presentArray = arrayOf(
         stringResource(R.string.presentMessageDay2BusPresent),
         stringResource(R.string.presentMessageDay2ParkPresent),
-        stringResource(R.string.presentMessageDay2TokiTokiPresent),
+        stringResource(R.string.presentMessageDay2HurugiPresent),
         stringResource(R.string.presentMessageDay2SpaPresent),
         stringResource(R.string.presentMessageDay2HotelPresent)
     )
     val presentThanksArray = arrayOf(
         stringResource(R.string.presentMessageDay2BusThanks),
         stringResource(R.string.presentMessageDay2ParkThanks),
-        stringResource(R.string.presentMessageDay2TokiTokiThanks),
+        stringResource(R.string.presentMessageDay2HurugiThanks),
         stringResource(R.string.presentMessageDay2SpaThanks),
         stringResource(R.string.presentMessageDay2HotelThanks)
     )
     val presentTimeArray = arrayOf(
         stringResource(R.string.presentPlanDay2BusTime),
         stringResource(R.string.presentPlanDay2ParkTime),
-        stringResource(R.string.presentPlanDay2TokiTokiTime),
+        stringResource(R.string.presentPlanDay2HurugiTime),
         stringResource(R.string.presentPlanDay2SpaTime),
         stringResource(R.string.presentPlanDay2HotelTime)
     )
     val presentPlaceArray = arrayOf(
         stringResource(R.string.presentPlanDay2BusPlace),
         stringResource(R.string.presentPlanDay2ParkPlace),
-        stringResource(R.string.presentPlanDay2TokiTokiPlace),
+        stringResource(R.string.presentPlanDay2HurugiPlace),
         stringResource(R.string.presentPlanDay2SpaPlace),
         stringResource(R.string.presentPlanDay2HotelPlace)
     )
@@ -200,7 +198,7 @@ fun MainShioriSecondDayMainView(){
         horizontalAlignment = Alignment.End
     ){
         Image(
-            painter = tokitoki,
+            painter = hurugi,
             contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = imageModifier
@@ -230,7 +228,7 @@ fun MainShioriSecondDayMainView(){
                 verticalArrangement = Arrangement.Center
             ){
                 Image(
-                    painter = bus,
+                    painter = shinkansen,
                     contentDescription = null,
                     contentScale = ContentScale.Crop,
                     modifier = imageModifier

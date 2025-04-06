@@ -147,7 +147,7 @@ fun MainContent(){
 
 
     val mainImageModifier = Modifier.size(300.dp)
-    val countTripBirthDay =  CountTripBirthDay("2025-02-20")
+    val countTripBirthDay =  CountTripBirthDay("2025-04-07")
     val favoriteImages = arrayOf(
         painterResource(R.drawable.mainimage),
         painterResource(R.drawable.fav0),
@@ -181,6 +181,10 @@ fun MainContent(){
         painterResource(R.drawable.fav32),
         painterResource(R.drawable.fav33),
         painterResource(R.drawable.fav34),
+        painterResource(R.drawable.fav35),
+        painterResource(R.drawable.fav36),
+        painterResource(R.drawable.fav37),
+        painterResource(R.drawable.fav38),
     )
     var favImageNumber by remember { mutableStateOf((0..favoriteImages.size-1).random()) }
     /*
